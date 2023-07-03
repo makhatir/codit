@@ -1,0 +1,54 @@
+footer {
+    border-bottom: 1px solid #ddd;
+}
+
+.fr-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+
+    .logo {
+        align-items: center;
+        display: flex;
+        img {
+            width: 85px;
+            height: 78px;
+            margin-right: 40px;
+        }
+
+        .site-title {
+            font-family: 'Marianne-Bold';
+            font-size: 20px;
+        }
+    }
+
+    nav {
+        ul {
+            list-style: none;
+            display: flex;
+        }
+
+        li {
+            margin-right: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+            padding: 5px;
+            font-family: 'Marianne-Bold';
+            color: #000091;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            text-align: center;
+        }
+
+        a:hover {
+            color: #000;
+            background-color: #e6e6e6;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Marianne-Bold';
+  src: url('./assets/fonts/Marianne-Bold.woff2') format('woff2'),
+       url('./assets/fonts/Marianne-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Marianne-Regular';
+  src: url('./assets/fonts/Marianne-Regular.woff2') format('woff2'),
+       url('./assets/fonts/Marianne-Regular.woff') format('woff');
+}
+body{
+  font-family: 'Marianne-Regular';
+}
+.container{
+    max-width: 78rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    width: 100%;
+}
+.container-fluid{
+  max-width: 78rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  width: 100%;
+  background-color: #f6f6f6;
+}

@@ -1,0 +1,77 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 95%;
+    .full-content{
+  
+      height: 700px; /* Hauteur du conteneur */
+      overflow-y: auto;
+    }
+    .modal-header{
+      align-items: center;
+      justify-content: space-between;
+      display: flex;
+      h2{
+        font-family: 'marianne-bold';
+        font-size: 24px;
+        line-height: 32px;
+      }
+      .btn-close{
+        color: #000091;
+        font-family: 'marianne-bold';
+        cursor: pointer;
+      }
+  
+    }
+    .menu {
+      list-style: none;
+      display: flex;
+      .bloc-menu{
+        margin: 0px 30px;
+        list-style: none;
+        padding: 0;
+      }
+  }
+  .sub-menu{
+    list-style: none;
+    padding: 0;
+  
+    li{
+      border-bottom:1px solid #ccc;
+      padding: 10px 0px;
+    }
+    a{
+      color: #000091;
+    }
+  
+  
+  }
+  
+  .fr-partie {
+    margin-right: 28px;
+    width: 200px;
+    font-family: "marianne-bold";
+    font-size: 18px;
+    font-weight: 700;
+    border-bottom: 1px solid #ccc;
+    line-height: 28px;
+    color: #000;
+    margin-bottom: 10px;
+    padding: 15px 0px;
+  }
+  }
+  

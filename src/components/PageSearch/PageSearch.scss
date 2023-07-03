@@ -1,0 +1,104 @@
+.ResultSearch {
+    background-color: #e5e5e5;
+
+    .section {
+        display: flex;
+        align-items: flex-start;
+
+        .content {
+            width: 70%;
+
+            .filter {
+                display: flex;
+                align-items: center;
+
+                .search-bar {
+                    padding: 41px;
+                    text-align: center;
+
+                    input {
+                        height: 34px;
+                        width: 299px;
+                        border: hidden;
+                        border-bottom: 2px solid #000091;
+                        background-color: #EEEEEE;
+                        font-family: 'Marianne-Regular';
+                    }
+
+                    button {
+                        width: 40px;
+                        height: 40px;
+                        border: hidden;
+                        color: #fff;
+                        background-color: #000091;
+                        font-weight: 500;
+                        font-family: 'Marianne-Bold';
+
+                    }
+                }
+
+                .filter-btn {
+                    .btn-nat {
+                        background-color: #E3E3FD;
+                        border-radius: 16px;
+                        color: #000091;
+                        font-family: 'marianne-regular';
+                        font-weight: 400;
+                        padding: 4px 12px 4px 12px;
+                        border-color: transparent;
+                        font-size: 14px;
+                        margin-right: 10px;
+                        cursor: pointer;
+                    }
+
+                    .btn-statut {
+                        color: #000091;
+                        font-size: 14px;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .bloc-result {
+                background-color: #fff;
+                min-height: 900px;
+                max-height: 900px;
+                overflow-y: auto;
+                margin: 15px;
+                padding: 15px;
+                .section-article{
+                    list-style: none;
+                    .fr-article{
+                            display: flex;
+                            .legiTitre{
+                                width: 70%;
+                            }
+                            .refJuridique{
+                                width: 30%;
+                            }
+                    }
+                }
+
+                .title-result {
+                    font-size: 32px;
+                    line-height: 40px;
+                }
+
+            }
+        }
+
+        .bloc-article {
+            display: flex;
+            align-items: center;
+            width: 40%;
+            height: 1035px;
+            overflow-x: scroll;
+            background-color: #fff;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 18, 0.16);
+
+        }
+    }
+
+}

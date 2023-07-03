@@ -1,0 +1,36 @@
+.fr-bloc{
+    padding: 10px;
+    .title-bloc{
+        display: block;
+        font-family: 'marianne-bold';
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 25px;
+    }
+    .title-update{
+        display: block;
+        color: #3A3A3A;
+        margin-bottom: 25px;
+    }
+    .title-source{
+        color: #000091;
+        
+    }
+    .section-text{
+        padding-left: 50px;
+    }
+    ul {
+        list-style: none;
+        display: flex;
+    }
+
+    li {
+        padding: 30px;
+        margin-right: 28px;
+        width: 282px;
+        height: 306px;
+        border: 1px solid #DDDDDD;
+        background-color: #fff;
+
+    }
+}
