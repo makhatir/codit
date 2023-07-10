@@ -8,6 +8,9 @@ header {
     justify-content: space-between;
     padding: 10px;
     background-color: #fff;
+    .icon-propos{
+        margin-top: 4px;
+    }
 
     .logo {
         align-items: center;
@@ -36,6 +39,8 @@ header {
 
         li {
             margin-right: 10px;
+            display: flex;
+            align-items: center;
         }
 
         a {

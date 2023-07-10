@@ -9,13 +9,11 @@ import Breadcrumbs from '../Breadcrumbs/Breadcrumbs';
 function HomePage() {
 
   return (
-    <div>
         <div className="fr-router">
           <Breadcrumbs />
           <Search props={MDT}/>
           <Bloc props={MDT} />
         </div>
-    </div>
   );
 }
 

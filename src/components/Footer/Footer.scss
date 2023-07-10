@@ -1,54 +1,86 @@
 footer {
-    border-bottom: 1px solid #ddd;
-}
-
-.fr-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: #fff;
-
-    .logo {
-        align-items: center;
+    height: 266px;
+    width: 100%;
+    flex-shrink: 0;
+    .fr-footer {
         display: flex;
-        img {
-            width: 85px;
-            height: 78px;
-            margin-right: 40px;
-        }
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: #fff;
+        border-bottom: 1px solid #ddd;
 
-        .site-title {
-            font-family: 'Marianne-Bold';
-            font-size: 20px;
+        .bloc-nav {
+            display: flex;
+            justify-content: space-between;
+        }
+    
+       
+    
+        .logo {
+            align-items: center;
+            display: flex;
+    
+            img {
+                width: 85px;
+                height: 78px;
+                margin-right: 40px;
+            }
+    
+            .site-title {
+                font-family: 'Marianne-Bold';
+                font-size: 20px;
+            }
+        }
+    
+        nav {
+            ul {
+                list-style: none;
+                display: flex;
+                padding: 0;
+            }
+    
+            li {
+                margin-right: 10px;
+            }
+    
+            a {
+                text-decoration: none;
+                color: #333;
+                padding: 5px;
+                font-family: 'Marianne-regular';
+                color: #3A3A3A;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 24px;
+                text-align: center;
+            }
+    
+            a:hover {
+                color: #000;
+                background-color: #e6e6e6;
+            }
         }
     }
-
-    nav {
-        ul {
-            list-style: none;
-            display: flex;
+    .nav-link{
+        padding: 0;
+        li{
+            border-right: 1px solid #666666;
+            margin-right: 0;
+            a {
+                padding: 16px;
+            }
         }
-
-        li {
-            margin-right: 10px;
-        }
-
+    }
+    .title-license {
+        font-size: 12px;
+        font-family: 'marianne-regular';
+        font-weight: 400;
+        color: #666666;
+        margin-left: 4px;
         a {
-            text-decoration: none;
-            color: #333;
-            padding: 5px;
-            font-family: 'Marianne-Bold';
-            color: #000091;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 24px;
-            text-align: center;
-        }
-
-        a:hover {
-            color: #000;
-            background-color: #e6e6e6;
+            font-size: 12px;
         }
     }
 }
+

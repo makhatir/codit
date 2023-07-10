@@ -15,17 +15,17 @@ function Nav(data) {
             <li>
             <Link to="/">Accueil</Link>
             </li>
-            {data.props.map((key, index) => (
+            {data.props.map((item, index) => (
               <li key={index}>
-                <a href="#">{key.nomenclature.libelle}</a>
+                <a href="#">{item.nomenclature.libelle}</a>
                 <ul class="sub-menu">
                   <li className="btn-sommaire">
-                  <Link  to={`/sommaire/${normalizeString(key.nomenclature.libelle)}`}>Sommaire</Link>
+                  <Link  to={`/sommaire/${normalizeString(item.nomenclature.libelle)}`}>Sommaire</Link>
                   </li>
-                  {key.nomenclature.children.map((key, index) => {
+                  {item.nomenclature.children.map((key, index) => {
                     return (
                       <li key={index}>
-                        <a href="#">{key.libelle}</a>
+            <Link  to={`/search/${normalizeString(item.nomenclature.libelle)}/${key.libelle}`}>{key.libelle}</Link>
                       </li>
                     );
                   })}

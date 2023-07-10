@@ -5,7 +5,7 @@ import SwitchRoute from './components/Router/SwitchRoute';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App full-site">
       <SwitchRoute />
     </div>
   );

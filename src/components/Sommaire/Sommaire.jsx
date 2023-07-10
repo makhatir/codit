@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router, Route, Routes, Link, useParams,useRouteMatch } from 'react-router-dom';
+import {  Link, useParams } from 'react-router-dom';
 import MDT from '../../Data/data.json';
 import "./Sommaire.scss";
 import {normalizeString} from '../../Helpers/Convert' 
@@ -21,16 +20,16 @@ function Sommaire() {
 
         <div className="full-content">
           <div className="menu">
-            {selectedChildren.nomenclature.children.map((key, index) => (
+            {selectedChildren.nomenclature.children.map((keys, index) => (
               <ul className="bloc-menu" key={index}>
                 <li className="fr-partie" key={index}>
-                  {key.libelle}
+                  {keys.libelle}
                 </li>
                 <ul class="sub-menu">
-                  {key.children.map((key, index) => {
+                  {keys.children.map((key, index) => {
                     return (
                       <li key={index}>
-                        <Link to={`../${id}/${key.idArborescence}`}>{key.libelle}</Link>
+                        <Link to={`../search/${id}/${key.libelle}`}>{key.libelle}</Link>
                       </li>
                     );
                   })}

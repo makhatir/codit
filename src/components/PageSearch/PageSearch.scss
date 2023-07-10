@@ -11,9 +11,10 @@
             .filter {
                 display: flex;
                 align-items: center;
+                justify-content: space-between;
 
                 .search-bar {
-                    padding: 41px;
+                    padding: 41px 12px;
                     text-align: center;
 
                     input {
@@ -38,6 +39,8 @@
                 }
 
                 .filter-btn {
+                    margin-right: 35px;
+
                     .btn-nat {
                         background-color: #E3E3FD;
                         border-radius: 16px;
@@ -61,27 +64,54 @@
 
             .bloc-result {
                 background-color: #fff;
-                min-height: 900px;
-                max-height: 900px;
+                min-height: 700px;
+                max-height: 700px;
                 overflow-y: auto;
-                margin: 15px;
-                padding: 15px;
-                .section-article{
+                margin: 0px 25px 0px 13px;
+                padding: 27px 38px 15px 46px;
+
+                .section-result {
+                    border-bottom: 1px solid rgba(221, 221, 221, 1);
+                }
+
+                .section-article {
                     list-style: none;
-                    .fr-article{
-                            display: flex;
-                            .legiTitre{
-                                width: 70%;
-                            }
-                            .refJuridique{
-                                width: 30%;
-                            }
+                    padding: 0;
+                    margin-top: 30px;
+                .btn-copy{
+                        background-color: transparent;
+                        border: none;
+                        cursor: pointer;
+                    }
+
+                    .fr-article {
+                        display: flex;
+
+                        .legiTitre {
+                            width: 70%;
+                            font-size: 14px;
+                            font-family: 'marianne-regular';
+                            line-height: 24px;
+                        }
+
+                        .refJuridique {
+                            width: 30%;
+                            background-color: transparent;
+                            border: none;
+                            text-decoration: underline;
+                            color: #000091;
+                            font-size: 14px;
+                            font-weight: 400;
+                            cursor: pointer;
+                        }
                     }
                 }
 
                 .title-result {
-                    font-size: 32px;
-                    line-height: 40px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    font-family: 'marianne-regular';
+                    line-height: 24px;
                 }
 
             }
@@ -89,14 +119,69 @@
 
         .bloc-article {
             display: flex;
-            align-items: center;
-            width: 40%;
+            width: 29%;
             height: 1035px;
             overflow-x: scroll;
             background-color: #fff;
-            padding: 15px;
-            text-align: center;
+            padding: 15px 25px 0px 25px;
             box-shadow: 0 2px 4px rgba(0, 0, 18, 0.16);
+
+            .full-article {
+                .full-ref {
+                    display: flex;
+                    margin-left: 5px;
+
+                    .label-ref {
+                        width: 100%;
+                    }
+
+                    .value-ref {
+                        width: 50%;
+                    }
+                }
+            }
+
+            .article-empty {
+                align-items: center;
+                display: flex;
+                text-align: center;
+            }
+
+            .filter-article {
+                .btn-filter {
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 0px 20px;
+
+                    .btn-article {
+                        font-size: 16px;
+                        position: relative;
+                        top: 1px;
+                        background-color: #fff;
+                        border: 1px solid #ccc;
+                        border-bottom: none;
+                        padding: 10px;
+                        font-weight: 700;
+                        font-family: 'marianne-regular';
+                        color: #000091;
+                        border-top: 3px solid #000091;
+                    }
+
+                    .btn-natinf {
+                        font-size: 16px;
+                        background-color: #E3E3FD;
+                        border: none;
+                        font-weight: 700;
+                        font-family: 'marianne-regular';
+                    }
+                }
+
+                .article-text {
+                    border: 1px solid #ccc;
+                    padding: 0px 15px;
+                    margin: 0px 3px;
+                }
+            }
 
         }
     }

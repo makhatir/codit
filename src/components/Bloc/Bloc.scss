@@ -1,5 +1,9 @@
 .fr-bloc{
-    padding: 10px;
+    padding: 32px 10px 0px 10px;
+    .icon-arrow-right{
+        float: right;
+        padding: 8px 0px 0px 0px;
+    }
     .title-bloc{
         display: block;
         font-family: 'marianne-bold';
@@ -14,23 +18,39 @@
     }
     .title-source{
         color: #000091;
+        margin-bottom: 16px;
         
-    }
-    .section-text{
-        padding-left: 50px;
     }
     ul {
         list-style: none;
         display: flex;
+        padding: 0;
     }
 
     li {
         padding: 30px;
         margin-right: 28px;
-        width: 282px;
-        height: 306px;
+        width: 25%;
+        height: auto;
         border: 1px solid #DDDDDD;
         background-color: #fff;
 
+    }
+    
+    .bloc-text{
+        display: flex;
+        justify-content: space-between;
+        .section-text{  
+            font-size: 18px;
+            font-family: 'marianne-regular';
+            font-weight: 400;
+            width: 60%;
+        }
+        .section-image{
+            justify-content: center;
+            display: flex;
+            width: 40%;
+            margin-top: 30px;
+        }
     }
 }

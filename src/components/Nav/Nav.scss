@@ -33,6 +33,7 @@
         text-decoration: none;
         color: #333;
         padding: 5px 10px;
+        cursor: pointer;
       }
       
       /* Styles pour le sous-menu */
@@ -40,6 +41,7 @@
         display: none;
         position: absolute;
         background-color: #fff;
+        z-index: 99;
         width: 257px;
         padding: 10px;
         li {

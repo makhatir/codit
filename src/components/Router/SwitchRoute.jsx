@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MDT from "../../Data/data.json";
 import Nav from "../Nav/Nav";
 import Header from "../Header/Header";
@@ -8,7 +7,7 @@ import "./SwitchRoute.scss";
 import HomePage from "../HomePage/HomePage";
 import PageSearch from "../PageSearch/PageSearch";
 import Sommaire from "../Sommaire/Sommaire";
-import { normalizeString } from "../../Helpers/Convert";
+import PageSearchGlobal from "../PageSearchGlobal/PageSearchGlobal";
 
 function SwitchRoute() {
 
@@ -17,12 +16,15 @@ function SwitchRoute() {
     <Router>
       <Header />
       <Nav props={MDT} />
+      <div className="full-content">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/sommaire/:id" element={<Sommaire />} />
-        <Route path="/search/" element={<PageSearch />} />
-        <Route path="/search/:id" element={<PageSearch />} />
+        <Route path="/detail-search/:param1/:param2" element={<PageSearch />} />
+        <Route path="/detail-search/:param1/:param2/:param3" element={<PageSearch />} />
+        <Route path="/search/:param1/:param2" element={<PageSearchGlobal />} />
       </Routes>
+      </div>
       <Footer />
     </Router>
   );

@@ -1,4 +1,14 @@
 .search-bar{
+    .input-bar{
+        display: inline;
+        position: relative;
+        .icon-clear{
+            position: absolute;
+            bottom: 0;
+            right: 10px;
+            cursor: pointer;
+        }
+    }
 
 padding: 41px;
 text-align: center;
@@ -16,7 +26,23 @@ button{
     border: hidden;
     color: #fff;
     background-color: #000091;
-    font-weight: 500;
-    font-family: 'Marianne-Bold';
+    position: relative;
+    top: 3px;
+    .btn-search{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        .icon-search{
+            padding: 5px;
+        }
+        .label-icon{
+            font-size: 18px;
+            font-weight: 500;
+            font-family: 'Marianne-regular';
+            line-height: 28px;
+        }
+    }
+
 }
 }
